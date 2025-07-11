@@ -1,0 +1,5 @@
+src/main/java/com/yourname/hotelplugin/commands/HotelCommand.java
+src/main/java/com/yourname/hotelplugin/data/HotelDoor.java
+src/main/java/com/yourname/hotelplugin/HotelPlugin.java
+src/main/java/com/yourname/hotelplugin/listeners/DoorSignListener.java
+src/main/java/com/yourname/hotelplugin/manager/HotelManager.java

@@ -1,0 +1,16 @@
+# HotelPlugin Configuration
+
+# Default sign material for hotel room signs.
+# Valid options: OAK_WALL_SIGN, SPRUCE_WALL_SIGN, BIRCH_WALL_SIGN, JUNGLE_WALL_SIGN, ACACIA_WALL_SIGN, DARK_OAK_WALL_SIGN, MANGROVE_WALL_SIGN, CHERRY_WALL_SIGN, BAMBOO_WALL_SIGN
+sign-material: OAK_WALL_SIGN
+
+# Default currency type for new rooms if not specified in the command.
+# Valid options: VAULT, DIAMOND, GOLD_INGOT, EMERALD (and any others you define in CurrencyType enum)
+default-currency-type: VAULT
+
+# Default description for rooms if not specified in the command.
+default-room-description: "A comfortable room."
+
+# Optional: Add settings for room expiration here later
+# room-expiration-enabled: false
+# room-expiration-duration-hours: 24

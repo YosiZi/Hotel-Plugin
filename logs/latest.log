@@ -1,0 +1,133 @@
+[16:40:42] [ServerMain/WARN]: [oshi.util.platform.windows.PerfDataUtil] Failed to add PDH Counter: \Paging File(_Total)\% Usage, Error code: 0xC0000BB8
+[16:40:42] [ServerMain/WARN]: [oshi.util.platform.windows.PerfCounterQueryHandler] Failed to add counter for PDH counter: \Paging File(_Total)\% Usage
+[16:40:42] [ServerMain/WARN]: [oshi.util.platform.windows.PerfCounterQuery] Disabling further attempts to query Paging File.
+[16:40:42] [ServerMain/WARN]: [oshi.util.platform.windows.WmiQueryHandler] COM exception: Invalid Class Win32_PerfRawData_PerfOS_PagingFile
+[16:40:46] [ServerMain/INFO]: Environment: Environment[accountsHost=https://api.mojang.com, sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[16:40:49] [ServerMain/INFO]: Loaded 1174 recipes
+[16:40:49] [ServerMain/INFO]: Loaded 1271 advancements
+[16:40:51] [Server thread/INFO]: Starting minecraft server version 1.20.2
+[16:40:51] [Server thread/INFO]: Loading properties
+[16:40:51] [Server thread/INFO]: This server is running Paper version git-Paper-318 (MC: 1.20.2) (Implementing API version 1.20.2-R0.1-SNAPSHOT) (Git: 9271ee7)
+[16:40:51] [Server thread/INFO]: Using 4 threads for Netty based IO
+[16:40:51] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[16:40:52] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
+    We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
+    For more information please visit: https://github.com/PaperMC/Paper/issues/8948
+[16:40:52] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 6 worker threads, and gen parallelism of 6 threads
+[16:40:52] [Server thread/INFO]: Default game type: SURVIVAL
+[16:40:52] [Server thread/INFO]: Generating keypair
+[16:40:52] [Server thread/INFO]: Starting Minecraft server on *:25565
+[16:40:52] [Server thread/INFO]: Using default channel type
+[16:40:52] [Server thread/INFO]: Paper: Using Java compression from Velocity.
+[16:40:52] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[16:40:53] [Server thread/INFO]: [Vault] Loading server plugin Vault v1.7.3-b131
+[16:40:53] [Server thread/INFO]: [HotelPlugin] Loading server plugin HotelPlugin v1.4.0
+[16:40:53] [Server thread/INFO]: [Essentials] Loading server plugin Essentials v2.21.1
+[16:40:53] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[16:40:53] [Server thread/INFO]: [Vault] Enabling Vault v1.7.3-b131
+[16:40:53] [Server thread/INFO]: [Vault] [Economy] Essentials Economy found: Waiting
+[16:40:53] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
+[16:40:53] [Server thread/INFO]: [Vault] Enabled Version 1.7.3-b131
+[16:40:53] [Server thread/INFO]: Preparing level "world"
+[16:40:54] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[16:40:54] [Server thread/INFO]: Time elapsed: 314 ms
+[16:40:54] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[16:40:54] [Server thread/INFO]: Time elapsed: 43 ms
+[16:40:54] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[16:40:54] [Server thread/INFO]: Time elapsed: 31 ms
+[16:40:54] [Server thread/INFO]: [HotelPlugin] Enabling HotelPlugin v1.4.0
+[16:40:54] [Server thread/INFO]: [HotelPlugin] Version 1.4.0 Enabled!
+[16:40:54] [Server thread/INFO]: [Essentials] Enabling Essentials v2.21.1
+[16:40:55] [Server thread/ERROR]: [Essentials] You are running an unsupported server version!
+[16:40:55] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
+[16:40:55] [Server thread/INFO]: [Essentials] No kits found to migrate.
+[16:40:56] [Server thread/INFO]: [Essentials] Selected Reflection Formatted Command Alias Provider as the provider for FormattedCommandAliasProvider
+[16:40:56] [Server thread/INFO]: [Essentials] Selected Paper Serialization Provider as the provider for SerializationProvider
+[16:40:56] [Server thread/INFO]: [Essentials] Selected 1.13+ Spawn Egg Provider as the provider for SpawnEggProvider
+[16:40:56] [Server thread/INFO]: [Essentials] Selected 1.20.5+ Banner Data Provider as the provider for BannerDataProvider
+[16:40:56] [Server thread/INFO]: [Essentials] Selected Paper Tick Count Provider as the provider for TickCountProvider
+[16:40:56] [Server thread/INFO]: [Essentials] Selected 1.11+ Item Unbreakable Provider as the provider for ItemUnbreakableProvider
+[16:40:56] [Server thread/INFO]: [Essentials] Selected Legacy Damage Event Provider as the provider for DamageEventProvider
+[16:40:56] [Server thread/INFO]: [Essentials] Selected 1.12+ Spawner Block Provider as the provider for SpawnerBlockProvider
+[16:40:56] [Server thread/INFO]: [Essentials] Selected Paper Server State Provider as the provider for ServerStateProvider
+[16:40:56] [Server thread/INFO]: [Essentials] Selected Paper Container Provider as the provider for ContainerProvider
+[16:40:56] [Server thread/INFO]: [Essentials] Selected 1.8.3+ Spawner Item Provider as the provider for SpawnerItemProvider
+[16:40:56] [Server thread/INFO]: [Essentials] Selected 1.9-1.20.4 Potion Meta Provider as the provider for PotionMetaProvider
+[16:40:56] [Server thread/INFO]: [Essentials] Selected 1.12.2+ Player Locale Provider as the provider for PlayerLocaleProvider
+[16:40:56] [Server thread/INFO]: [Essentials] Selected Reflection Sync Commands Provider as the provider for SyncCommandsProvider
+[16:40:56] [Server thread/INFO]: [Essentials] Selected Legacy InventoryView Abstract Class ABI Provider as the provider for InventoryViewProvider
+[16:40:56] [Server thread/INFO]: [Essentials] Selected 1.14.4+ Persistent Data Container Provider as the provider for PersistentDataProvider
+[16:40:56] [Server thread/INFO]: [Essentials] Selected Paper Material Tag Provider as the provider for MaterialTagProvider
+[16:40:56] [Server thread/INFO]: [Essentials] Selected Paper Biome Key Provider as the provider for BiomeKeyProvider
+[16:40:56] [Server thread/INFO]: [Essentials] Selected 1.14+ Sign Data Provider as the provider for SignDataProvider
+[16:40:56] [Server thread/INFO]: [Essentials] Selected Reflection Online Mode Provider as the provider for OnlineModeProvider
+[16:40:56] [Server thread/INFO]: [Essentials] Selected Paper Known Commands Provider as the provider for KnownCommandsProvider
+[16:40:56] [Server thread/INFO]: [Essentials] Selected 1.17.1+ World Info Provider as the provider for WorldInfoProvider
+[16:40:56] [Server thread/INFO]: [Essentials] Loaded 43517 items from items.json.
+[16:40:56] [Server thread/INFO]: [Essentials] Using locale he_IL
+[16:40:57] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
+[16:40:58] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
+[16:40:58] [Server thread/INFO]: [Vault] [Economy] Essentials Economy hooked.
+[16:40:58] [Server thread/INFO]: [Essentials] Using superperms-based permissions.
+[16:40:58] [Server thread/INFO]: Running delayed init tasks
+[16:40:58] [Server thread/INFO]: [Essentials] Essentials found a compatible payment resolution method: Vault Compatibility Layer (v1.7.3-b131)!
+[16:40:58] [Craft Scheduler Thread - 2 - Vault/INFO]: [Vault] Checking for Updates ... 
+[16:40:58] [Server thread/INFO]: [HotelPlugin] DEBUG: updateSign - Called for room TestRoom1 at Location{world=CraftWorld{name=world},x=45.0,y=67.0,z=0.0,pitch=0.0,yaw=0.0}
+[16:40:58] [Craft Scheduler Thread - 3 - Essentials/INFO]: [Essentials] Fetching version information...
+[16:40:58] [Craft Scheduler Thread - 2 - Vault/INFO]: [Vault] No new version available
+[16:40:58] [Server thread/INFO]: [HotelPlugin] Loaded 1 hotel doors.
+[16:40:58] [Server thread/INFO]: Done (7.734s)! For help, type "help"
+[16:40:58] [Server thread/INFO]: Timings Reset
+[16:40:58] [Server thread/INFO]: [HotelPlugin] DEBUG: updateSign - Running scheduled task for room TestRoom1 at Location{world=CraftWorld{name=world},x=45.0,y=67.0,z=0.0,pitch=0.0,yaw=0.0}
+[16:40:58] [Server thread/INFO]: [HotelPlugin] DEBUG: updateSign - Sign block type: AIR, Block to attach to type: AIR
+[16:40:58] [Server thread/WARN]: [HotelPlugin] DEBUG: updateSign - Block to attach sign to at Location{world=CraftWorld{name=world},x=46.0,y=67.0,z=0.0,pitch=0.0,yaw=0.0} for room TestRoom1 is not solid (AIR). Cannot create wall sign.
+[16:43:12] [User Authenticator #0/INFO]: UUID of player YosiZi is bed9407a-c672-47d4-a90b-5f209570adbf
+[16:43:13] [Server thread/INFO]: YosiZi joined the game
+[16:43:13] [Server thread/INFO]: YosiZi[/127.0.0.1:21263] logged in with entity id 228 at ([world]45.139977718367476, 66.0, -0.7574108895648344)
+[16:43:16] [Server thread/INFO]: YosiZi issued server command: /hotel create Test 10 VAULT 43 66 -0 45 66 -0 [Description...]
+[16:43:33] [Server thread/INFO]: YosiZi issued server command: /hotel create Test 10 VAULT 44 66 -0 45 66 -0 [Description...]
+[16:43:45] [Server thread/INFO]: YosiZi issued server command: /hotel create Test 10 VAULT 44 66 0 45 66 1 [Description...]
+[16:43:57] [Server thread/INFO]: YosiZi issued server command: /hotel create Test 10 VAULT 43 66 0 44 66 1 [Description...]
+[16:44:15] [Server thread/INFO]: YosiZi issued server command: /hotel create Test 10 VAULT 43 67 -1 44 66 1 [Description...]
+[16:44:29] [Server thread/INFO]: YosiZi issued server command: /hotel create Test 10 VAULT 43 67 -1 43 67 -2 [Description...]
+[16:44:44] [Server thread/INFO]: YosiZi issued server command: /hotel create Test 10 VAULT 43 66 -1 43 66 -2 [Description...]
+[16:44:51] [Server thread/INFO]: YosiZi issued server command: /hotel create Test 10 VAULT 43 67 -1 43 67 -2 [Description...]
+[16:44:51] [Server thread/INFO]: [HotelPlugin] Saved 2 hotel doors.
+[16:44:51] [Server thread/INFO]: [HotelPlugin] DEBUG: updateSign - Called for room Test at Location{world=CraftWorld{name=world},x=44.0,y=67.0,z=-3.0,pitch=0.0,yaw=0.0}
+[16:44:51] [Server thread/INFO]: [HotelPlugin] DEBUG: updateSign - Running scheduled task for room Test at Location{world=CraftWorld{name=world},x=44.0,y=67.0,z=-3.0,pitch=0.0,yaw=0.0}
+[16:44:51] [Server thread/INFO]: [HotelPlugin] DEBUG: updateSign - Sign block type: OAK_WALL_SIGN, Block to attach to type: STRIPPED_CHERRY_WOOD
+[16:44:51] [Server thread/INFO]: [HotelPlugin] DEBUG: updateSign - Retrieved sign state for room Test
+[16:44:51] [Server thread/INFO]: [HotelPlugin] DEBUG: updateSign - Sign update called for room Test
+[16:46:01] [Server thread/INFO]: YosiZi lost connection: Disconnected
+[16:46:01] [Server thread/INFO]: YosiZi left the game
+[16:46:03] [Server thread/INFO]: Stopping server
+[16:46:03] [Server thread/INFO]: [Essentials] Disabling Essentials v2.21.1
+[16:46:03] [Server thread/INFO]: [Vault] [Economy] Essentials Economy unhooked.
+[16:46:03] [Server thread/INFO]: [HotelPlugin] Disabling HotelPlugin v1.4.0
+[16:46:03] [Server thread/INFO]: [HotelPlugin] Saved 2 hotel doors.
+[16:46:03] [Server thread/INFO]: [HotelPlugin] Version 1.4.0 Disabled!
+[16:46:03] [Server thread/INFO]: [Vault] Disabling Vault v1.7.3-b131
+[16:46:03] [Server thread/INFO]: Saving players
+[16:46:04] [Server thread/INFO]: Saving worlds
+[16:46:04] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[16:46:04] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[16:46:04] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[16:46:04] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[16:46:04] [Server thread/INFO]: [ChunkHolderManager] Saved 122 block chunks, 225 entity chunks, 0 poi chunks in world 'world' in 0.15s
+[16:46:04] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[16:46:04] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[16:46:04] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[16:46:04] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[16:46:04] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[16:46:04] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 17 entity chunks, 0 poi chunks in world 'world_nether' in 0.02s
+[16:46:04] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[16:46:04] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[16:46:04] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[16:46:04] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[16:46:04] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[16:46:04] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 10 entity chunks, 0 poi chunks in world 'world_the_end' in 0.01s
+[16:46:04] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[16:46:04] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[16:46:04] [Server thread/INFO]: Flushing Chunk IO
+[16:46:04] [Server thread/INFO]: Closing Thread Pool
+[16:46:04] [Server thread/INFO]: Closing Server

@@ -1,0 +1,83 @@
+doors:
+  TestRoom2:
+    doorLocation:
+      ==: org.bukkit.Location
+      world: world
+      x: 43.0
+      y: 67.0
+      z: -1.0
+      pitch: 0.0
+      yaw: 0.0
+    signLocation:
+      ==: org.bukkit.Location
+      world: world
+      x: 43.0
+      y: 67.0
+      z: -2.0
+      pitch: 0.0
+      yaw: 0.0
+    price: 20.0
+    currencyType: VAULT
+    description: Test room for 20 Coins
+    signFacing: WEST
+    occupied: false
+    rentExpiry: 0
+  TestRoom1:
+    doorLocation:
+      ==: org.bukkit.Location
+      world: world
+      x: 43.0
+      y: 66.0
+      z: -1.0
+      pitch: 0.0
+      yaw: 0.0
+    signLocation:
+      ==: org.bukkit.Location
+      world: world
+      x: 43.0
+      y: 66.0
+      z: -2.0
+      pitch: 0.0
+      yaw: 0.0
+    price: 20.0
+    currencyType: VAULT
+    description: Test room for 20 Coins
+    signFacing: WEST
+    occupied: false
+    rentExpiry: 0
+rooms:
+  TestRoom1:
+    doorLocation:
+      world: world
+      x: 45.0
+      y: 66.0
+      z: 0.0
+    signLocation:
+      world: world
+      x: 45.0
+      y: 67.0
+      z: 0.0
+    price: 20.0
+    currencyType: VAULT
+    description: Test room for 20 Coins
+    signFacing: WEST
+  Test:
+    doorLocation:
+      world: world
+      x: 43.0
+      y: 66.0
+      z: -1.0
+    secondDoorLocation:
+      world: world
+      x: 43.0
+      y: 66.0
+      z: -2.0
+    signLocation:
+      world: world
+      x: 44.0
+      y: 67.0
+      z: -3.0
+    price: 10.0
+    currencyType: VAULT
+    description: '[Description...]'
+    signFacing: EAST

@@ -1,0 +1,30 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.0.0.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1751723161541
+  login: 1751722993325
+money: '0'
+last-account-name: YosiZi
+logoutlocation:
+  world: 57d97dd5-c6dd-4401-a790-7c9cf030cd16
+  world-name: world
+  x: 44.8682586779053
+  y: 66.0
+  z: -1.7442470443005884
+  yaw: 92.6999282836914
+  pitch: 17.399879455566406
