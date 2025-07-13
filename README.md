@@ -25,6 +25,19 @@ Dependencies & Prerequisites:
 To run this plugin, your Minecraft server must be running on Spigot or PaperMC for version 1.20.2.
 Vault,EssentialsX.
 
+Getting Started & Demo
+To quickly see the plugin in action, simply:
+
+Download the compiled HotelPlugin.jar file located in the project files directory of this repository.
+
+Place the .jar file into the plugins folder of your Minecraft Spigot/PaperMC server running version 1.20.2 or higher.
+
+Start or restart your server.
+
+Once loaded, you can begin configuring rooms and experiencing the hotel system directly in-game. (Further instructions on commands can be found in [link to your commands section/wiki/another file, if applicable]).
+
+
+
 Credits & Acknowledgements:
 YosiZi & itsmelody18 Created for DreamCraft Parks 
 
