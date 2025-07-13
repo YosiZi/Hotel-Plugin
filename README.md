@@ -34,7 +34,7 @@ Place the .jar file into the plugins folder of your Minecraft Spigot/PaperMC ser
 
 Start or restart your server.
 
-Once loaded, you can begin configuring rooms and experiencing the hotel system directly in-game. (Further instructions on commands can be found in [link to your commands section/wiki/another file, if applicable]).
+Once loaded, you can begin configuring rooms and experiencing the hotel system directly in-game. (Further instructions on commands can be found in /Hotel help
 
 
 
