@@ -4,15 +4,11 @@ main: com.yourname.hotelplugin.HotelPlugin
 api-version: 1.20
 author: yosi_game & itsmelody18
 description: A hotel management plugin for DreamCraft Parks
-softdepend: [Vault] # <-- Moved softdepend to the correct top-level position
+softdepend: [Vault]
 
 commands:
   hotel:
     description: Main command for Hotel Plugin.
-    # IMPORTANT: Remove the 'permission' key here.
-    # We will handle permissions for each *subcommand* in your Java code (HotelCommand.java).
-    # If a permission is set here, it applies to *all* subcommands by default,
-    # preventing non-ops from even typing /hotel buy.
     usage: |
       /hotel buy <roomID> - Purchase an available hotel room.
       /hotel release <roomID> - Release your owned hotel room.
@@ -22,6 +18,13 @@ commands:
       /hotel remove <roomID> - Admin: Forcibly remove a room from the plugin.
       /hotel reload - Admin: Reload plugin configuration.
     aliases: [ ht ]
+  hotelstaff:
+    description: Staff commands for managing hotel room reservations.
+    usage: |
+      /hotelstaff book <player> <room> <duration> - Book a room for a player.
+      /hotelstaff cancel <room> - Cancel a room reservation.
+      /hotelstaff check <room> - Check the status of a room.
+    aliases: [ hts ]
 
 permissions:
   # Player Permissions (default: true means all players have these by default)
@@ -39,13 +42,22 @@ permissions:
     default: true
 
   # Admin Permissions (default: op means only OPs have these by default)
-  # It's good practice to have a parent admin permission, and then specific ones as children.
   hotelplugin.admin:
     description: Parent permission for all administrative commands for HotelPlugin.
     default: op
     children:
       hotelplugin.admin.setroom: true
       hotelplugin.admin.remove: true
-      hotelplugin.admin.info_others: true # For admin to get info on *any* room
-      hotelplugin.admin.list_all: true    # For admin to list *all* rooms (occupied and available)
+      hotelplugin.admin.info_others: true
+      hotelplugin.admin.list_all: true
       hotelplugin.admin.reload: true
+      hotelplugin.staff: true # Grant the staff parent permission to admins
+
+  # Staff Permissions (default: false means these must be explicitly granted)
+  hotelplugin.staff:
+    description: Parent permission for all staff reservation commands.
+    default: false
+    children:
+      hotelplugin.staff.book: true
+      hotelplugin.staff.cancel: true
+      hotelplugin.staff.check: true

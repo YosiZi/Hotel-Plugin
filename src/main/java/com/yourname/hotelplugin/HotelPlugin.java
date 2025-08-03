@@ -1,10 +1,12 @@
 package com.yourname.hotelplugin;
 
 import com.yourname.hotelplugin.commands.HotelCommand;
+import com.yourname.hotelplugin.commands.StaffCommand;
 import com.yourname.hotelplugin.listeners.DoorSignListener;
 import com.yourname.hotelplugin.managers.HotelManager;
+import com.yourname.hotelplugin.managers.ReservationManager;
 import net.milkbowl.vault.economy.Economy;
-import org.bukkit.Bukkit; // Import Bukkit for scheduler
+import org.bukkit.Bukkit;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -15,6 +17,7 @@ public final class HotelPlugin extends JavaPlugin {
     private static final Logger log = Logger.getLogger("Minecraft");
     private Economy econ = null;
     private HotelManager hotelManager;
+    private ReservationManager reservationManager; // Add the new ReservationManager
 
     @Override
     public void onEnable() {
@@ -24,20 +27,23 @@ public final class HotelPlugin extends JavaPlugin {
         if (!setupEconomy()) {
             log.severe(String.format("[%s] - Disabled due to no Vault dependency found or no economy provider!", getDescription().getName()));
             getServer().getPluginManager().disablePlugin(this);
-            return; // Crucially, return here if setupEconomy fails
+            return;
         }
 
-        // Initialize HotelManager (constructor no longer calls loadDoors)
+        // Initialize managers
         this.hotelManager = new HotelManager(this, econ);
+        // Initialize the new ReservationManager, passing the main plugin instance
+        this.reservationManager = new ReservationManager(this);
 
         // Schedule the actual loading of doors for the next tick
-        // This ensures all worlds are loaded before trying to get locations
         Bukkit.getScheduler().runTaskLater(this, () -> {
-            this.hotelManager.initialize(); // Call the new initialize method
-        }, 1L); // 1L means 1 tick later
+            this.hotelManager.initialize();
+        }, 1L);
 
         // Register commands and listeners
         getCommand("hotel").setExecutor(new HotelCommand(this));
+        // Register the new StaffCommand
+        getCommand("hotelstaff").setExecutor(new StaffCommand(this));
         getServer().getPluginManager().registerEvents(new DoorSignListener(this), this);
 
         log.info(String.format("[%s] Version %s Enabled!", getDescription().getName(), getDescription().getVersion()));
@@ -45,10 +51,12 @@ public final class HotelPlugin extends JavaPlugin {
 
     @Override
     public void onDisable() {
-        // Save all hotel doors data when the plugin disables
-        // Only try to save if hotelManager was successfully initialized
         if (this.hotelManager != null) {
             this.hotelManager.saveDoors();
+        }
+        // Save reservations when the plugin disables
+        if (this.reservationManager != null) {
+            this.reservationManager.saveReservations();
         }
         log.info(String.format("[%s] Version %s Disabled!", getDescription().getName(), getDescription().getVersion()));
     }
@@ -71,5 +79,10 @@ public final class HotelPlugin extends JavaPlugin {
 
     public HotelManager getHotelManager() {
         return hotelManager;
+    }
+
+    // Add a public getter for the ReservationManager
+    public ReservationManager getReservationManager() {
+        return reservationManager;
     }
 }

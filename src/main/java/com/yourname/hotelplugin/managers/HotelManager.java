@@ -11,8 +11,8 @@ import org.bukkit.OfflinePlayer;
 import org.bukkit.block.Block;
 import org.bukkit.block.Sign;
 import org.bukkit.block.BlockFace;
-import org.bukkit.block.data.Bisected; // NEW IMPORT: Required for Bisected.Half
-import org.bukkit.block.data.type.Door; // NEW IMPORT: Required for Door block data
+import org.bukkit.block.data.Bisected;
+import org.bukkit.block.data.type.Door;
 import org.bukkit.block.data.type.WallSign;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -461,6 +461,47 @@ public class HotelManager {
             }
         } else {
             plugin.getLogger().warning("Block at " + loc.toString() + " is not a door type (" + block.getType().name() + "). Cannot set door state.");
+        }
+    }
+
+    // --- NEW METHODS FOR RESERVATION MANAGEMENT ---
+
+    /**
+     * Checks if a room is currently available for reservation.
+     * A room is considered available if it has no owner.
+     * @param roomId The ID of the room to check.
+     * @return true if the room exists and is available, false otherwise.
+     */
+    public boolean isRoomAvailable(String roomId) {
+        HotelDoor door = getHotelDoor(roomId);
+        // A room is available if it exists and is not currently occupied
+        return door != null && !door.isOccupied();
+    }
+
+    /**
+     * Marks a room as reserved for a specific player.
+     * @param roomId The ID of the room to book.
+     * @param guestUUID The UUID of the player who the room is being booked for.
+     */
+    public void setRoomBooked(String roomId, UUID guestUUID) {
+        HotelDoor door = getHotelDoor(roomId);
+        if (door != null) {
+            door.setOwner(guestUUID);
+            updateSign(door);
+            saveDoors();
+        }
+    }
+
+    /**
+     * Marks a room as available again by clearing its owner.
+     * @param roomId The ID of the room to free up.
+     */
+    public void setRoomAvailable(String roomId) {
+        HotelDoor door = getHotelDoor(roomId);
+        if (door != null) {
+            door.setOwner(null);
+            updateSign(door);
+            saveDoors();
         }
     }
 }
