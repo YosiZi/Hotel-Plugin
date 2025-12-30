@@ -5,12 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="da97309c-5327-40c4-bf25-e62a13ed87ce" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yourname/hotelplugin/HotelPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yourname/hotelplugin/HotelPlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yourname/hotelplugin/managers/HotelManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yourname/hotelplugin/managers/HotelManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-1.0-SNAPSHOT (1).jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yourname/hotelplugin/HotelPlugin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yourname/hotelplugin/commands/HotelCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yourname/hotelplugin/commands/StaffCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yourname/hotelplugin/data/CurrencyType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yourname/hotelplugin/data/HotelDoor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yourname/hotelplugin/data/Reservation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yourname/hotelplugin/data/Room.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yourname/hotelplugin/listeners/DoorSignListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yourname/hotelplugin/managers/HotelManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yourname/hotelplugin/managers/ReservationManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yourname/hotelplugin/utils/HotelSignUtils.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,18 +35,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "YosiZi"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;YosiZi&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/YosiZi/Hotel-Plugin.git",
-    "accountId": "8e948028-2f34-4018-a6b6-dfb911f4cfa3"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/YosiZi/Hotel-Plugin.git&quot;,
+    &quot;accountId&quot;: &quot;8e948028-2f34-4018-a6b6-dfb911f4cfa3&quot;
   }
-}]]></component>
+}</component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -51,47 +59,52 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JAR Application.paper-1.20.2-318.jar.executor": "Run",
-    "Maven.hotel [clean].executor": "Run",
-    "Maven.hotel [install].executor": "Run",
-    "Maven.hotel [package].executor": "Run",
-    "Maven.hotel [test].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/yosiz/IdeaProjects/hotel/plugins",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/yosiz/IdeaProjects/hotel/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15039062",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JAR Application.paper-1.20.2-318.jar.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.hotel [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.hotel [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.hotel [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.hotel [test].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/yosiz/IdeaProjects/Hotel-Plugin/src/main/java/com/yourname/hotelplugin/commands&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/yosiz/IdeaProjects/hotel/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15039062&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;PLAIN_TEXT&quot;
+    ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\yosiz\IdeaProjects\Hotel-Plugin\src\main\java\com\yourname\hotelplugin\commands" />
       <recent name="C:\Users\yosiz\IdeaProjects\hotel\plugins" />
       <recent name="C:\Users\yosiz\IdeaProjects\hotel\src\main\java\com\yourname\hotelplugin\commands" />
       <recent name="C:\Users\yosiz\IdeaProjects\hotel\src\main\java\org" />
       <recent name="C:\Users\yosiz\IdeaProjects\hotel" />
-      <recent name="C:\Users\yosiz\IdeaProjects\hotel\src\main\java\com\yourname\hotelplugin\managers" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\yosiz\IdeaProjects\Hotel-Plugin\src\main\java\com\yourname\hotelplugin" />
+      <recent name="C:\Users\yosiz\IdeaProjects\Hotel-Plugin\com\yourname\hotelplugin" />
+      <recent name="C:\Users\yosiz\IdeaProjects\Hotel-Plugin" />
       <recent name="C:\Users\yosiz\AppData\Roaming\JetBrains\IntelliJIdea2025.1\extensions\com.intellij.database\schema.layouts" />
       <recent name="C:\Users\yosiz\IdeaProjects\hotel\src\main\java\com\yourname\hotelplugin\managers" />
-      <recent name="C:\Users\yosiz\IdeaProjects\hotel\src\main\resources" />
-      <recent name="C:\Users\yosiz\IdeaProjects\hotel\plugins" />
-      <recent name="C:\Users\yosiz\IdeaProjects\hotel\plugins\" />
     </key>
   </component>
   <component name="RunManager">
