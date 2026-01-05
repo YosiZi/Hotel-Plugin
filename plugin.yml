@@ -1,0 +1,63 @@
+name: HotelPlugin
+version: 1.4.0
+main: com.yourname.hotelplugin.HotelPlugin
+api-version: 1.20
+author: yosi_game & itsmelody18
+description: A hotel management plugin for DreamCraft Parks
+softdepend: [Vault]
+
+commands:
+  hotel:
+    description: Main command for Hotel Plugin.
+    usage: |
+      /hotel buy <roomID> - Purchase an available hotel room.
+      /hotel release <roomID> - Release your owned hotel room.
+      /hotel info [roomID] - View room details (your own, or any if admin).
+      /hotel list - List available hotel rooms.
+      /hotel setroom <roomID> <price> [currency] [description] - Admin: Set up a new room.
+      /hotel remove <roomID> - Admin: Forcibly remove a room from the plugin.
+      /hotel reload - Admin: Reload plugin configuration.
+    aliases: [ ht ]
+  hotelstaff:
+    description: Staff commands for managing hotel room reservations.
+    usage: |
+      /hotelstaff book <player> <room> <duration> - Book a room for a player.
+      /hotelstaff cancel <room> - Cancel a room reservation.
+      /hotelstaff check <room> - Check the status of a room.
+    aliases: [ hts ]
+
+permissions:
+  # Player Permissions (default: true means all players have these by default)
+  hotelplugin.buy:
+    description: Allows players to buy hotel rooms.
+    default: true
+  hotelplugin.release:
+    description: Allows players to release their own hotel rooms.
+    default: true
+  hotelplugin.info:
+    description: Allows players to view information about their own room.
+    default: true
+  hotelplugin.list:
+    description: Allows players to list available hotel rooms.
+    default: true
+
+  # Admin Permissions (default: op means only OPs have these by default)
+  hotelplugin.admin:
+    description: Parent permission for all administrative commands for HotelPlugin.
+    default: op
+    children:
+      hotelplugin.admin.setroom: true
+      hotelplugin.admin.remove: true
+      hotelplugin.admin.info_others: true
+      hotelplugin.admin.list_all: true
+      hotelplugin.admin.reload: true
+      hotelplugin.staff: true # Grant the staff parent permission to admins
+
+  # Staff Permissions (default: false means these must be explicitly granted)
+  hotelplugin.staff:
+    description: Parent permission for all staff reservation commands.
+    default: false
+    children:
+      hotelplugin.staff.book: true
+      hotelplugin.staff.cancel: true
+      hotelplugin.staff.check: true
